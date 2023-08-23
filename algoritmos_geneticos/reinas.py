@@ -38,7 +38,7 @@ toolbox.register('mate', tools.cxOnePoint)
 toolbox.register("mutate", tools.mutShuffleIndexes, indpb=0.2)
 
 
-pop = toolbox.population(n=1000) #Se crea una poblacion de 100 individuos
+pop = toolbox.population(n=10000)
 hof = tools.HallOfFame(1)
 stats = tools.Statistics(key=operator.attrgetter('fitness.values'))
 stats.register('mean', numpy.mean)
